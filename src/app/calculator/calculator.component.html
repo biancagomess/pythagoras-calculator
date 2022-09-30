@@ -1,0 +1,54 @@
+<main class="main-container d-flex p-2">
+
+  <div class="hadow-lg p-3 mb-5 rounded container" id="containerTwo">
+    <!-- creates the selection of options to perform the calculation -->
+    <div class="selectOptionsCalculate form-group">
+      <label for="optionsCalculate" class="text-white">
+        Selecione qual lado deseja calcular:
+      </label>
+      <select class="form-control" name="optionsCalculate" id="optionsCalculate" [(ngModel)]="selected"
+        (change)="this.disabledInput()">
+        <option [ngValue]="item" *ngFor="let item of triangleSides"> {{ item }} </option>
+      </select>
+    </div>
+    <!-- Calculator -->
+    <div class="calculator">
+        <!-- calculator fields where the values to be calculated will be received according to the option selected above -->
+      <div class="calculator-form">
+        <form [formGroup]="form">
+          <!-- Enables fields to be typed according to the selected option -->
+          <div class="form-group">
+            <label for="opposite-catheter" class="text-white">Cateto oposto:</label>
+            <input type="number" class="form-control" id="opposite-catheter" title="Informe o valor do cateto oposto" formControlName="oppositeCatheter" value=""
+              placeholder="Informe o valor do cateto oposto" [value]="oppositeCcatheter"
+              onKeyPress="if(this.value.length==4) return false;" required>
+          </div>
+          <div class="form-group">
+            <label for="adjacent-cathet" class="text-white">Cateto adjacente:</label>
+            <input type="number" class="form-control" id="adjacent-cathet" title="Informe o valor do cateto adjacente" formControlName="adjacentCathet"
+              placeholder="Informe o valor do cateto adjacente" [value]="adjacentCathet"
+              onKeyPress="if(this.value.length==4) return false;" required>
+          </div>
+          <div class="form-group">
+            <label for="hypotenuse" class="text-white">Hipotenusa:</label>
+            <input type="number" class="form-control" id="hypotenuse" title="Informe o valor da hipotenusa" formControlName="hypotenuse"
+              placeholder="Informe o valor da hipotenusa" [value]="hypotenuse"
+              onKeyPress="if(this.value.length==4) return false;" required>
+          </div>
+          <!-- Performs the calculation of the entered fields -->
+          <div class="form-group">
+            <div class="btn ">
+              <button class="btn btn-outline-info" (click)="calculate()"> Calcular</button>
+            </div>
+            <div class="btn ">
+              <button class="btn btn-outline-info" (click)="clean()"> Limpar</button>
+            </div>
+            <div class="btn ">
+              <button class="btn btn-outline-danger" (click)="back()"> Voltar </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

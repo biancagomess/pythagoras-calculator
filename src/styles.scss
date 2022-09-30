@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root{
+  --text-color-white: #ffffff;
+  --gray-color: #ffffff30;
+  --gray-color-two: #ffffff50;
+}
+
+
+.main-container{
+  background-image: url('./assets/images/passagem-tecnologia-futurista-estilo-retro-vetor.jpg');
+  background-size: cover;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  opacity: 90%;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  text-align: center;
+  box-shadow: rgb(116 115 115 / 35%) 0px 5px 15px;
+  border: 2px solid var(--gray-color);
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--gray-color-two);
+}
+
+#containerTwo {
+  width: 25%;
+}
+
+.form-group{
+  padding: 4% 5%;
+}
+
+/* Hidden arrows of input in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Hidden arrows of input in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  text-align: center;
+
+}
+
+input, select{
+  outline: none;
+  border: 2px solid var(--gray-color);
+  background-color: transparent;
+}
+
+input[type=number]:disabled {
+  background-color: var(--gray-color);
+  color: var(--text-color-white);
+  font-weight: bolder;
+}
+
+
