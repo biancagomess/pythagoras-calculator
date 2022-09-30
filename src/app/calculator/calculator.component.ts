@@ -61,7 +61,7 @@ export class CalculatorComponent implements OnInit {
         this.form.get('adjacentCathet')?.disable();
         this.form.get('hypotenuse')?.disable();
         break;
-      }
+    }
 
     this.form.reset();
   }
@@ -70,14 +70,11 @@ export class CalculatorComponent implements OnInit {
   calculate() {
     if (this.selected === "Hipotenusa") {
       this.calcHypotenuse();
-      console.log("chamou o hipotenusa");
 
     } else if (this.selected === "Cateto Adjacente") {
       this.calcAdjacentCathet();
-      console.log("chamou o adjacente");
     } else if (this.selected === "Cateto Oposto") {
       this.calcOppositeCcatheter();
-      console.log("chamou o oposto");
     }
   }
 
@@ -109,12 +106,11 @@ export class CalculatorComponent implements OnInit {
     } else {
       this.oppositeCcatheter = Number((Math.pow(this.valueHypotenuse, 2) - Math.pow(this.valueAdjacentCathet, 2)).toFixed(2));
       this.oppositeCcatheter = Number(Math.sqrt(this.oppositeCcatheter).toFixed(2));
-      console.log("verificando o cateter oposto", this.oppositeCcatheter);
     }
   }
 
   //clears the form
-  clean(){
+  clean() {
     this.form.reset();
   }
 

@@ -14,8 +14,8 @@ export class HomeCalculatorComponent implements OnInit {
   }
 
   // Redirects to the calculator page according to the route file
-  goToCalculator(){
-   this.router.navigate(['/calculator']);
+  goToCalculator() {
+    this.router.navigate(['/calculator']);
   }
 
 }

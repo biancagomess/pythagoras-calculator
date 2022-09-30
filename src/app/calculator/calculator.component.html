@@ -13,26 +13,26 @@
     </div>
     <!-- Calculator -->
     <div class="calculator">
-        <!-- calculator fields where the values to be calculated will be received according to the option selected above -->
+      <!-- calculator fields where the values to be calculated will be received according to the option selected above -->
       <div class="calculator-form">
         <form [formGroup]="form">
           <!-- Enables fields to be typed according to the selected option -->
           <div class="form-group">
             <label for="opposite-catheter" class="text-white">Cateto oposto:</label>
-            <input type="number" class="form-control" id="opposite-catheter" title="Informe o valor do cateto oposto" formControlName="oppositeCatheter" value=""
-              placeholder="Informe o valor do cateto oposto" [value]="oppositeCcatheter"
-              onKeyPress="if(this.value.length==4) return false;" required>
+            <input type="number" class="form-control" id="opposite-catheter" title="Informe o valor do cateto oposto"
+              formControlName="oppositeCatheter" value="" placeholder="Informe o valor do cateto oposto"
+              [value]="oppositeCcatheter" onKeyPress="if(this.value.length==4) return false;" required>
           </div>
           <div class="form-group">
             <label for="adjacent-cathet" class="text-white">Cateto adjacente:</label>
-            <input type="number" class="form-control" id="adjacent-cathet" title="Informe o valor do cateto adjacente" formControlName="adjacentCathet"
-              placeholder="Informe o valor do cateto adjacente" [value]="adjacentCathet"
-              onKeyPress="if(this.value.length==4) return false;" required>
+            <input type="number" class="form-control" id="adjacent-cathet" title="Informe o valor do cateto adjacente"
+              formControlName="adjacentCathet" placeholder="Informe o valor do cateto adjacente"
+              [value]="adjacentCathet" onKeyPress="if(this.value.length==4) return false;" required>
           </div>
           <div class="form-group">
             <label for="hypotenuse" class="text-white">Hipotenusa:</label>
-            <input type="number" class="form-control" id="hypotenuse" title="Informe o valor da hipotenusa" formControlName="hypotenuse"
-              placeholder="Informe o valor da hipotenusa" [value]="hypotenuse"
+            <input type="number" class="form-control" id="hypotenuse" title="Informe o valor da hipotenusa"
+              formControlName="hypotenuse" placeholder="Informe o valor da hipotenusa" [value]="hypotenuse"
               onKeyPress="if(this.value.length==4) return false;" required>
           </div>
           <!-- Performs the calculation of the entered fields -->

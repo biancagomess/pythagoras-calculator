@@ -1,5 +1,5 @@
 .main-container {
-   h2 {
+  h2 {
     font-weight: bold;
     opacity: 0.8;
     color: var(--text-color-white);
@@ -38,7 +38,7 @@
         font-size: 0.75rem;
       }
 
-      a{
+      a {
         font-size: small;
         text-decoration: none;
       }
@@ -55,6 +55,7 @@
     .btn,
     .btn-outline-primary {
       width: 20%;
+
       &:hover {
         color: var(--text-color-white) !important;
       }

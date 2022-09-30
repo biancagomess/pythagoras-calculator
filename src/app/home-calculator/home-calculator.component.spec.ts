@@ -14,10 +14,10 @@ describe('HomeCalculatorComponent', () => {
       imports: [
         RouterTestingModule
       ],
-      declarations: [ HomeCalculatorComponent ],
+      declarations: [HomeCalculatorComponent],
 
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -32,6 +32,6 @@ describe('HomeCalculatorComponent', () => {
 
   it('goTo', () => {
     spyOn(router, 'navigate');
-     expect(router.navigate).toHaveBeenCalledWith(['/calculator']);
+    expect(router.navigate).toHaveBeenCalledWith(['/calculator']);
   })
 });
