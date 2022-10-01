@@ -13,7 +13,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Node.js
 ---
 
-Este projeto pode ser acesso pelo servidor [heroku](https://angular-pythagoras-calculator.herokuapp.com/)
+Este projeto pode ser acessado pelo servidor [heroku](https://angular-pythagoras-calculator.herokuapp.com/)
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 - [Git](https://git-scm.com)
