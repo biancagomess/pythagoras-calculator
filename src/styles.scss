@@ -1,25 +1,23 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
 }
 
-:root{
+:root {
   --text-color-white: #ffffff;
   --gray-color: #ffffff30;
   --gray-color-two: #ffffff50;
+  --text-black-b: #000000;
 }
 
-
-.main-container{
-  background-image: url('./assets/images/passagem-tecnologia-futurista-estilo-retro-vetor.jpg');
+.main-container {
+  background-image: url('./assets/images/line-temp.jpg');
   background-size: cover;
-  max-width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  opacity: 90%;
   justify-content: center;
 }
 
@@ -36,8 +34,12 @@
   width: 25%;
 }
 
-.form-group{
-  padding: 4% 5%;
+.form-group {
+  padding: 2% 2%;
+}
+
+blockquote {
+  margin: 1rem 0 1rem;
 }
 
 /* Hidden arrows of input in Chrome, Safari, Edge, Opera */
@@ -46,23 +48,103 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 /* Hidden arrows of input in Firefox */
 input[type=number] {
   -moz-appearance: textfield;
   text-align: center;
-
 }
 
-input, select{
+input,
+select {
   outline: none;
   border: 2px solid var(--gray-color);
   background-color: transparent;
+  color: var(--text-black-b);
 }
 
 input[type=number]:disabled {
   background-color: var(--gray-color);
   color: var(--text-color-white);
   font-weight: bolder;
+
+  &::placeholder {
+    font-size: small;
+  }
 }
 
+@media(max-width: 800px) {
 
+  .container,
+  #containerTwo {
+    width: 80%;
+  }
+
+  .start {
+    .btn {
+      width: 60% !important;
+    }
+  }
+
+  .form-group {
+    .btn {
+      width: 100% !important;
+      padding: 2% 0;
+    }
+  }
+
+  .img-rectangleTriangle {
+    img {
+      width: 100%;
+    }
+  }
+
+  figcaption,
+  a {
+    max-width: 50%;
+  }
+
+  input,
+  select {
+    text-align: left;
+    max-width: 100%;
+
+    &::placeholder {
+      font-size: 10px;
+    }
+  }
+
+  .img-rectangleTriangle {
+    img {
+      width: 100%;
+    }
+  }
+
+  figcaption,
+  a {
+    max-width: 50%;
+  }
+
+}
+
+@media(min-width: 800px) and (max-width:2661px) {
+  .main-container {
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .container,
+  #containerTwo {
+    max-width: 60%;
+  }
+
+  input,
+  select {
+    text-align: left;
+    max-width: 100%;
+
+    &::placeholder {
+      font-size: 1rem;
+    }
+  }
+}

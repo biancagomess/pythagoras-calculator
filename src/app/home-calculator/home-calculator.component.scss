@@ -1,24 +1,17 @@
 .main-container {
   h2 {
-    font-weight: bold;
     opacity: 0.8;
     color: var(--text-color-white);
   }
 
   .content-text {
-    line-height: 1.7;
+    padding: 0% 2%;
     color: var(--text-color-white);
 
-    span {
-      font-size: 1rem;
-    }
-
     blockquote {
-      width: 100%;
       text-align: justify;
-      font-weight: bold;
       letter-spacing: 1px;
-      padding: 0 2%;
+      padding: 0% 2%;
     }
 
     .img-rectangleTriangle {
@@ -32,15 +25,10 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       }
 
-      figcaption {
-        max-width: 50%;
-        font-weight: bold;
-        font-size: 0.75rem;
-      }
-
+      figcaption,
       a {
-        font-size: small;
-        text-decoration: none;
+        max-width: 100%;
+        font-size: 0.5rem;
       }
     }
   }
@@ -54,8 +42,6 @@
 
     .btn,
     .btn-outline-primary {
-      width: 20%;
-
       &:hover {
         color: var(--text-color-white) !important;
       }
