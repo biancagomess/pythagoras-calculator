@@ -1,27 +1,67 @@
-# PythagorasCalculator
+<h1 align="center"> 🖥️ Pythagoras Calculator </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+<p> É um projeto que calcula os lados de um triângulo retângulo(Teaorema de Pitágoras), de acorodo com os dados que o usuário inserir. Todos os cálculo são tratados no pŕoprio front-end. </p> 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h3 style="margin-top: 15px; font-weigth: bold">Tecnologias utilizadas</h3>
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Code scaffolding
+- HTML5 
+- CSS3
+- Angular 
+- TypeScript 
+- Node.js
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este projeto pode ser acesso pelo servidor [heroku](https://angular-pythagoras-calculator.herokuapp.com/)
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+- [Git](https://git-scm.com)
+- [Node.js](https://node.js.org/en/)
+- [Angular Cli](https://github.com/angular/angular-cli) version 13.3.3.
+
+Além disso é bom ter um editor para trabalhar com o código como exemplo [VSCode](https://code.visualstudio.com/)
+
+
+## Iniciar o server
+```bash
+# Clone este repositório
+$ git clone <git@github.com:biancagomesalves/pythagoras-calculator.git>
+
+# Acesse a pasta do projeto no terminal
+# Instale as dependências 
+$ npm install
+
+# Abra o projeto no seu editor 
+$ cd pythagoras-calculator
+
+# No terminal execute o comando:
+$ ng server 
+
+# O servidor iniciará na porta acesse:
+```
+
+No terminal `ng serve`. Após compilação navegue para `http://localhost:4200/`. 
+
+## Gerando componentes/serviços/modulos
+
+Para gerar um novo componente insira o seguinte comando no terminal: `ng generate component component-name`
+
+Vocẽ também pode utilizar outros comandos: `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Insira no terminal `ng build` para buildar o projeto. O build será gerado no diretório `dist/`.
 
-## Running unit tests
+## Testes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Insira no terminal o comando `ng test` para teste unitário via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Ajuda
+Para obter maiores informações sobre o Angular CLI use `ng help` ou visite a página [Angular CLI Overview and Command Reference](https://angular.io/cli).
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Desenvolvido ❤️ por Bianca Gomes Alves 
+- 🔗 [LinkedIn](https://www.linkedin.com/in/bianca-gomes-alves)
