@@ -6,7 +6,7 @@
       <label for="optionsCalculate" class="text-white">
         Selecione qual lado deseja calcular:
       </label>
-      <select class="form-control" name="optionsCalculate" id="optionsCalculate" [(ngModel)]="selected"
+      <select class="form-control form-select" name="optionsCalculate" id="optionsCalculate" [(ngModel)]="selected"
         (change)="this.disabledInput()">
         <option [ngValue]="item" *ngFor="let item of triangleSides"> {{ item }} </option>
       </select>

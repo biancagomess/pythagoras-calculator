@@ -18,6 +18,7 @@ export class CalculatorComponent implements OnInit {
   hypotenuse?: number;
   oppositeCcatheter?: number;
   adjacentCathet?: number;
+  message: String = "Em um triângulo retângulo o cateto não pode ser maior que a hipotenusa. Informe um valor diferente :).";
 
   form: FormGroup;
 
@@ -37,7 +38,6 @@ export class CalculatorComponent implements OnInit {
 
   // Enables and disables form fields to be calculated
   disabledInput() {
-    // this.selected == "Hipotenusa" ? this.form.get('hypotenuse')?.disable() : this.selected == "Cateto Oposto" ? this.form.get('adjacentCathet')?.disable() : this.form.get('oppositeCatheter')?.disable();
     switch (this.selected) {
 
       case "Hipotenusa":
@@ -70,7 +70,6 @@ export class CalculatorComponent implements OnInit {
   calculate() {
     if (this.selected === "Hipotenusa") {
       this.calcHypotenuse();
-
     } else if (this.selected === "Cateto Adjacente") {
       this.calcAdjacentCathet();
     } else if (this.selected === "Cateto Oposto") {
@@ -85,12 +84,13 @@ export class CalculatorComponent implements OnInit {
     this.hypotenuse = Number(Math.hypot(this.valueAdjacentCathet, this.valueOppositeCatheter).toFixed(2));
   }
 
-  // calculates the adjacent catet
+  // calculates the adjacent catheter
   calcAdjacentCathet() {
     this.valueHypotenuse = this.form.get('hypotenuse')?.value;
     this.valueOppositeCatheter = this.form.get('oppositeCatheter')?.value;
+
     if (this.valueOppositeCatheter > this.valueHypotenuse) {
-      alert("Em um triângulo retângulo o cateto não pode ser maior que a hipotenusa. Informe um valor diferente :).");
+      alert(this.message);
     } else {
       this.adjacentCathet = ((this.valueHypotenuse * this.valueHypotenuse)) - ((this.valueOppositeCatheter * this.valueOppositeCatheter));
       this.adjacentCathet = Number(Math.sqrt(this.adjacentCathet).toFixed(3));
@@ -101,8 +101,9 @@ export class CalculatorComponent implements OnInit {
   calcOppositeCcatheter() {
     this.valueAdjacentCathet = this.form.get('adjacentCathet')?.value;
     this.valueHypotenuse = this.form.get('hypotenuse')?.value;
+
     if (this.valueAdjacentCathet > this.valueHypotenuse) {
-      alert("Em um triângulo retângulo o cateto não pode ser maior que a hipotenusa. Informe um valor diferente :).");
+      alert(this.message);
     } else {
       this.oppositeCcatheter = Number((Math.pow(this.valueHypotenuse, 2) - Math.pow(this.valueAdjacentCathet, 2)).toFixed(2));
       this.oppositeCcatheter = Number(Math.sqrt(this.oppositeCcatheter).toFixed(2));
