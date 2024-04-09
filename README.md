@@ -47,7 +47,7 @@ No terminal `ng serve`. Após compilação navegue para `http://localhost:4200/`
 
 Para gerar um novo componente insira o seguinte comando no terminal: `ng generate component component-name`
 
-Vocẽ também pode utilizar outros comandos: `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Você também pode utilizar outros comandos: `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
