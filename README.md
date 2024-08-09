@@ -64,4 +64,4 @@ Para obter maiores informações sobre o Angular CLI use `ng help` ou visite a p
 ---
 
 Desenvolvido ❤️ por Bianca Gomes Alves 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/bianca-gomes-alves)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/bianca--gomes/)
